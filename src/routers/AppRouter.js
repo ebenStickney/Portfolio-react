@@ -5,6 +5,8 @@ import HomePage from "../components/HomePage";
 import Portfolio from "../components/Portfolio";
 import Contact from "../components/Contact";
 import NotFoundPage from "../components/NotFound"; 
+import ProjectOne from "../components/Project-1";
+import ProjectTwo from "../components/Project-2";
 
 
 
@@ -25,7 +27,20 @@ const AppRouter = () => (
    <Route
     path="/portfolio" 
     component={Portfolio}
+    exact={true}
    />
+   <Route
+     path="/portfolio/1"
+     component={ProjectOne}
+   />
+   <Route
+     path="/portfolio/2"
+     component={ProjectTwo}
+   />
+
+   
+   
+   
    <Route
      component={NotFoundPage}
    />
